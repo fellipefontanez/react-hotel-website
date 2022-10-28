@@ -49,7 +49,7 @@ const Home = () => {
     return (
       <div className="main">
       {filtredList.map((room,index) => (
-        <div key={room.location + room.tags + index} onClick={() => handleCard('quarto')} className="container">
+        <div key={room.location + room.tags + index} onClick={() => handleCard('room')} className="container">
         <img className="imgRoom houston" src={room.image} alt="Room" />
         <div className="content-container">
           <p className="city">{room.location}</p>

@@ -2,10 +2,12 @@
 import {BrowserRouter, Route, Routes, Outlet} from 'react-router-dom';
 import Template from './pages/Template';
 import Home from './pages/Home';
+import Room from './pages/Room';
 import {Navigate} from 'react-router-dom';
 import {createContext, useState } from "react";
 
 export const SearchContext = createContext();
+
 
 const AppRouter = () => {
   const [search, setSearch] = useState("");
@@ -16,8 +18,7 @@ const AppRouter = () => {
         <Routes>
           <Route path='/' element={<Template />}>
             <Route index element={<Home />} />
-            <Route path='quarto' element={<p>quarto</p>} />
-            {/* <Route path='quarto' element={<p>quarto</p>} /> */}
+            <Route path='/room' element = {<Room />} />
             <Route path='*' element={<Navigate to="/" />} />
           </Route>
         </Routes>
