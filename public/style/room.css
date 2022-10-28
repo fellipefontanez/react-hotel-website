@@ -50,7 +50,7 @@
 }
 
   .roomLocation{
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: .8rem;
   }
@@ -73,7 +73,7 @@
     font-weight: bold;
   }
   .roomRating > p{
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   #adress{
     grid-column-start: 1;
@@ -113,5 +113,5 @@
     border-radius: 20px;
   }
   .reserveBtn:hover{
-cursor: pointer;
+    cursor: pointer;
   }
