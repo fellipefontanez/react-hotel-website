@@ -1,10 +1,11 @@
 import logo from "../assets/images/4.png";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import {useContext} from "react";
 import {SearchContext} from "../Routes";
 
 const Header = () => {
-    const {setSearch, search} = useContext(SearchContext);
+  const { setSearch, search } = useContext(SearchContext);
+
 
     return (
         <div className="navbar-container">
@@ -24,9 +25,9 @@ const Header = () => {
       </div>
       <div className="line"></div>
       <div className="navbar">
-        <Link href="#">Home</Link>
-        <Link href="#">Profile</Link>
-        <Link href="#">My bookings</Link>
+        <Link to={'home'}>Home</Link>
+        <Link to={'profile'}>Profile</Link>
+        <Link to={'bookings'}>My bookings</Link>
       </div>
     </div>
     )

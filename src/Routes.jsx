@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Routes, Outlet} from 'react-router-dom';
 import Template from './pages/Template';
 import Home from './pages/Home';
 import Room from './pages/Room';
+import LoginForm from './pages/Login-Form';
 import {Navigate} from 'react-router-dom';
 import {createContext, useState } from "react";
 
@@ -18,7 +19,8 @@ const AppRouter = () => {
         <Routes>
           <Route path='/' element={<Template />}>
             <Route index element={<Home />} />
-            <Route path='/room' element = {<Room />} />
+            <Route path='/room' element={<Room />} />
+            <Route path='profile' element={<LoginForm />} />
             <Route path='*' element={<Navigate to="/" />} />
           </Route>
         </Routes>

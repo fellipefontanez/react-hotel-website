@@ -1,0 +1,63 @@
+:root{
+    --dourado2: #EBE8E3;
+    --verde: #004F44;
+    --dourado: #CEA673;
+}
+.formContainer{
+    width: 60%;
+    height: auto;
+    margin: 8vh auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    box-shadow: 0 0 25px 3px rgba(124, 124, 124, 0.398);
+    padding: 1rem 1.4rem;
+    border-radius: 20px;
+}
+.loginContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: space-between;
+}
+.inputFields{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.firstHeader{
+    margin-bottom: -8px !important;
+}
+.formHeader{
+    font-size: 1.45rem;
+    color: black;
+    font-weight: bold;
+}
+.lineHeader, .lineBottom{
+    border-bottom: 1px solid;
+    width: 90%;
+    margin: auto;
+    background-color: var(--dourado);
+}
+.lineBottom{
+    width: 70%;
+}
+.inputFields > input{
+    border: 1px solid rgba(124, 124, 124, 0.398);
+    border-radius: 25px;
+    height: 1.4rem;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.confirmation{
+    display: flex;
+    gap: .5rem;
+    width: 80%;
+    margin: auto;
+}
+.confirmation > p{
+    font-size: .85rem;
+}

@@ -10,7 +10,6 @@ const Home = () => {
   
   const navigate = useNavigate();
 
-  //Fetch data from mock
   const [quarto, setQuarto] = useState([]);
   
   const {search} = useContext(SearchContext);
@@ -45,7 +44,7 @@ const Home = () => {
       navigate(link);
     }
 
-    //Body of page
+    //Page's body
     return (
       <div className="main">
       {filtredList.map((room,index) => (
