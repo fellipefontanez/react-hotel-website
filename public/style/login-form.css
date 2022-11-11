@@ -6,7 +6,7 @@
 
 /* Containers */
 .formContainer{
-    width: 60%;
+    width: 84%;
     height: auto;
     margin: 8vh auto;
     display: flex;
@@ -60,7 +60,7 @@
     border-radius: 25px;
     height: 1.8rem;
     text-align: center;
-    width: 80%;
+    width: 90%;
     margin: auto;
     font-size: 1.1rem;
 }
