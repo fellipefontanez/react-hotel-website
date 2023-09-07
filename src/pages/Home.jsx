@@ -14,10 +14,14 @@ const Home = () => {
   const [filtredList, setFiltredList] = useState(quarto);
   let effectSearch;
 
-  useEffect(() => {
+  function getQuartosFromApi() {
     axios.get(dataUrl).then((res) => {
       setQuarto(res.data);
     });
+  }
+
+  useEffect(() => {
+    getQuartosFromApi();
   }, []);
 
   useEffect(() => {

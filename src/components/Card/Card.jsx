@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 export default function Card({ room, position }) {
   const navigate = useNavigate();
   const handleCard = (link) => {
+    window.scroll({ top: 0, behavior: "instant" });
     navigate(link);
   };
   return (
@@ -12,11 +13,7 @@ export default function Card({ room, position }) {
       onClick={() => handleCard("room")}
       className="container"
     >
-      <img
-        className="imgRoom houston"
-        src={room.image}
-        alt="Room"
-      />
+      <img className="imgRoom houston" src={room.image} alt="Room" />
       <div className="content-container">
         <p className="city">{room.location}</p>
         <div className="tags">
