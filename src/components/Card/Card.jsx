@@ -5,7 +5,7 @@ export default function Card({ room, position }) {
   const navigate = useNavigate();
   const handleCard = (link) => {
     window.scroll({ top: 0, behavior: "instant" });
-    navigate(link);
+    navigate(link, { state: { room } });
   };
   return (
     <div
