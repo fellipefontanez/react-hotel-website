@@ -1,117 +1,126 @@
-:root{
-    --dourado2: #EBE8E3;
-    --verde: #004F44;
-    --dourado: #CEA673;
+:root {
+  --dourado2: #ebe8e3;
+  --verde: #004f44;
+  --dourado: #cea673;
 }
 
-.room-container{
-    height: auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 1rem 0;
+.room-container {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 1rem 0;
 }
-.img-info{
-    margin: .5rem 0;
-    height: var(30rem + auto);
-    display: grid;
-    gap: 1rem;
-    border-bottom: solid 1px;
+.img-info {
+  margin: 0.5rem 0;
+  height: var(30rem + auto);
+  display: grid;
+  gap: 1rem;
+  border-bottom: solid 1px;
 }
-.img-info > img{
-    width: 100%;
-    height: 30vh;
-    object-fit: cover;
+.img-info > img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
 }
-.loader-container{
-    margin: 1.5rem 0;
-    display: flex;
-    width: 100%;
-    height: 30vh;
-    justify-content: center;
-    align-items: center;
+.loader-container {
+  margin: 1.5rem 0;
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
 }
 .loader {
-    border: 7px solid #f3f3f3 !important; /* Light grey */
-    border-top: 7px solid var(--dourado) !important; /* Blue */
-    border-radius: 50% !important;
-    width: 50px! important;
-    height: 50px !important;
-    animation: spin 2s linear infinite !important;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
-.imgTextContainer{
-    margin-left: .5rem;
+  border: 7px solid #f3f3f3 !important; /* Light grey */
+  border-top: 7px solid var(--dourado) !important; /* Blue */
+  border-radius: 50% !important;
+  width: 50px !important;
+  height: 50px !important;
+  animation: spin 2s linear infinite !important;
 }
 
-  .roomLocation{
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: .8rem;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-  .roomName{
-    display: flex;
-    justify-content: space-between;
-    width: 98%;
-    align-items: baseline;
+  100% {
+    transform: rotate(360deg);
   }
-  .value{
-    font-size: 1.5rem;
-  }
-  .roomRating{
-    display: grid;
-    margin: .5rem 0;
-    grid-template-columns: .4fr .7fr 1fr;
-    width: 100%;
-    row-gap: 1rem;
-    color: black;
-    font-weight: bold;
-  }
-  .roomRating > p{
-    font-size: 1rem;
-  }
-  #adress{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: black;
-    margin-bottom: .6rem;
-  }
-  .roomDesc{
-    margin-left: .5rem;
-    display: grid;
-    grid-template-columns: 1fr 4rem;
-    border-bottom: solid 1px;
-  }
-  .roomDesc > img{
-    align-self: center;
-  }
-  #description{
-    font-size: 1.25rem;
-    color: black;
-    margin: 1rem 0 1.5rem;
-  }
+}
 
-  .reserve-container{
-    margin: 3rem;
-    display: flex;
-    justify-content: center;
-  }
-  .reserveBtn{
-    background-color: var(--verde);
-    height: 5rem;
-    width: 13rem;
-    color: white;
-    font-size: 1.5rem;
-    border: 0;
-    border-radius: 20px;
-  }
-  .reserveBtn:hover{
-    cursor: pointer;
-  }
+.imgTextContainer {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.roomLocation {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+.roomName {
+  display: flex;
+  width: 98%;
+  align-items: baseline;
+  flex-direction: column;
+}
+.value {
+  font-size: 1.4rem;
+}
+.roomRating {
+  display: flex;
+  margin: 0.5rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: black;
+  font-weight: bold;
+}
+.roomRating > p {
+  font-size: 1rem;
+}
+#adress {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0.6rem;
+}
+.roomDesc {
+  margin-left: 0.5rem;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 1px;
+}
+.roomDesc > img {
+  align-self: center;
+}
+#description {
+  font-size: 1.25rem;
+  color: rgb(32, 32, 32);
+  padding: 1rem 0;
+  text-align: center;
+  width: 95%;
+}
+
+.reserve-container {
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.reserveBtn {
+  background-color: var(--verde);
+  height: 5rem;
+  width: 13rem;
+  color: white;
+  font-size: 1.5rem;
+  border: 0;
+  border-radius: 20px;
+}
+.reserveBtn:hover {
+  cursor: pointer;
+}

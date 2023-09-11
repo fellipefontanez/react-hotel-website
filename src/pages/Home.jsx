@@ -2,6 +2,7 @@ import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import { SearchContext } from "../Routes";
 import Card from "../components/Card/Card";
+import SkeletonCard from "../components/Skeleton/Card";
 
 // URL's dos dados
 const dataUrl =
@@ -19,7 +20,7 @@ const Home = () => {
       setQuarto(res.data);
     });
   }
-
+  const numberOfSkeletons = 5;
   useEffect(() => {
     getQuartosFromApi();
   }, []);
@@ -46,13 +47,13 @@ const Home = () => {
   return (
     <main className="main">
       <section className="cards-container">
-        {filtredList.map((room, index) => (
-          <Card
-            room={room}
-            position={index}
-            key={index}
-          />
-        ))}
+        {!quarto.length
+          ? Array.from({ length: numberOfSkeletons }, (_, index) => (
+              <SkeletonCard key={index} />
+            ))
+          : filtredList.map((room, index) => (
+              <Card room={room} position={index} key={index} />
+            ))}
       </section>
     </main>
   );

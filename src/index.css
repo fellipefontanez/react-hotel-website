@@ -20,9 +20,9 @@ body {
 
 .navbar-container {
   width: 100%;
-  display: grid;
-  grid-template-columns: 100%;
-  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0;
   padding: 0.5rem 0 0 0;
   border: 1px solid rgba(168, 166, 166, 0.396);
@@ -81,10 +81,14 @@ body {
   border-radius: 20px;
   padding-left: 0.4rem;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 #search {
   margin-right: 0;
-  padding: 12px 20px;
+  padding: 12px;
   box-sizing: border-box;
   border-radius: 20px;
   border: 1px solid lightgray;
@@ -97,6 +101,10 @@ body {
 .type {
   margin: 0;
   background-color: var(--verde);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
 .line {
   width: 60vw;
@@ -144,7 +152,7 @@ body {
   color: var(--dourado);
   position: relative;
   height: 300px;
-  max-width: 300px;
+  width: 300px;
   box-shadow: 5px 3px 10px 5px #a1a1a1;
   @media screen and (min-width: 800px) {
     width: 300px;
@@ -202,6 +210,7 @@ body {
   justify-content: space-around;
   padding: 10rem 0 6rem;
   gap: 5rem;
+  width: 101%;
 }
 .informationContainer {
   /* background-color: rebeccapurple; */

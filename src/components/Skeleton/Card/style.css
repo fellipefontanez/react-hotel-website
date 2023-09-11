@@ -1,0 +1,61 @@
+.skeletonCard {
+  border: none;
+  border-radius: 16px;
+  background: var(--verde);
+  height: auto;
+  overflow: hidden;
+  color: var(--dourado);
+  position: relative;
+  height: 300px;
+  width: 300px;
+  box-shadow: 5px 3px 10px 5px #a1a1a1;
+  position: relative;
+  @media screen and (min-width: 800px) {
+    width: 300px;
+  }
+}
+.img {
+  width: 100%;
+  background-color: #a1a1a1;
+  height: 200px;
+}
+.skeleton {
+  width: 100%;
+  background: linear-gradient(90deg, #d6d6d6 25%, #e0e0e0 50%, #d6d6d6 75%);
+  background-size: 200% 100%;
+  animation: loading 2s infinite linear;
+}
+
+@keyframes loading {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skl-label {
+  width: 100px;
+  height: 20px;
+  border-radius: 8px;
+  margin: 10px 8px;
+}
+.skl-money {
+  width: 85px;
+  height: 25px;
+  border-radius: 8px;
+  margin: 10px 8px;
+  position: absolute;
+  bottom: 56px;
+  right: 0;
+}
+.skl-address {
+  width: 200px;
+  height: 15px;
+  border-radius: 8px;
+  margin: 10px 8px;
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+}
