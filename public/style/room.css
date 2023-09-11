@@ -4,17 +4,23 @@
   --dourado: #cea673;
 }
 
+.room-details {
+  width: 100%;
+  max-width: 850px;
+}
+
 .room-container {
   height: auto;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
 }
 .img-info {
-  margin: 0.5rem 0;
-  height: var(30rem + auto);
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
   border-bottom: solid 1px;
 }
@@ -108,7 +114,7 @@
 }
 
 .reserve-container {
-  margin: 3rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
 }
@@ -120,7 +126,28 @@
   font-size: 1.5rem;
   border: 0;
   border-radius: 20px;
+  transition: all ease-in-out 0.25s;
 }
 .reserveBtn:hover {
   cursor: pointer;
+  background-color: #004139;
+}
+.reserveBtn:disabled {
+  background-color: #004139;
+}
+
+.button-animation {
+  animation: backgroundButtonBookIn 3s ease;
+}
+
+@keyframes backgroundButtonBookIn {
+  25% {
+    background-color: #00b59d;
+  }
+  80% {
+    background-color: #00b59d;
+  }
+  100% {
+    background-color: var(--verde);
+  }
 }

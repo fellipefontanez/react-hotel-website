@@ -1,0 +1,62 @@
+.checkoutRow {
+  width: 100%;
+  display: flex;
+  padding: 20px 5px;
+  justify-content: end;
+}
+
+.checkoutRow > button {
+  min-width: 200px;
+  height: 45px;
+  padding: 10px 16px;
+  border-radius: 16px;
+  background-color: transparent;
+  border: 1px solid var(--dourado);
+  color: var(--dourado);
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all ease-in-out 0.2s;
+  transition: background-position cubic-bezier(0.26, 0.75, 0.37, 0.22) 1s;
+  overflow: hidden;
+  background: linear-gradient(to left, transparent 50%, rgb(25, 135, 84) 50%)
+    right;
+  background-size: 210% 100%;
+  position: relative;
+}
+.checkoutRow > button:hover {
+  background-color: var(--dourado);
+  color: white;
+}
+
+.checkoutRow > button.clicked {
+  background-position: left;
+  border: rgb(25, 135, 84);
+  color: white;
+}
+.success-icon {
+  position: absolute;
+  margin: auto;
+  bottom: -2px;
+  right: 80px;
+  font-size: 2rem;
+  opacity: 0;
+  transition: all ease-in-out 0.5;
+}
+
+.showSuccess {
+  animation: successIconShow forwards ease 1.5s;
+}
+
+@keyframes successIconShow {
+  50% {
+    opacity: 1;
+    scale: 1.2;
+  }
+  75% {
+    scale: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

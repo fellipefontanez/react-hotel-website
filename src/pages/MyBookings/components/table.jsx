@@ -7,6 +7,7 @@ import {
   removeAll,
   removeByPosition,
 } from "../../../store/reducers/booking";
+import ProceedCheckout from "./proceed";
 
 export default function BookingTable() {
   const selectedRooms = useSelector((state) => state.booking);
@@ -83,6 +84,7 @@ export default function BookingTable() {
       <div className="bookingResults">
         Total value <span>${totalValue}</span>
       </div>
+      <ProceedCheckout />
     </section>
   );
 }

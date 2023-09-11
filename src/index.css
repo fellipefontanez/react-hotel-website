@@ -17,6 +17,9 @@ body {
   color: var(--dourado);
   overflow-x: hidden;
 }
+* {
+  box-sizing: border-box;
+}
 
 .navbar-container {
   width: 100%;
