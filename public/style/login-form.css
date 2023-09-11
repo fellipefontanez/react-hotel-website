@@ -1,131 +1,141 @@
-:root{
-    --dourado2: #EBE8E3;
-    --verde: #004F44;
-    --dourado: #CEA673;
+:root {
+  --dourado2: #ebe8e3;
+  --verde: #004f44;
+  --dourado: #cea673;
 }
 
 /* Containers */
-.formContainer{
-    width: 84%;
-    height: auto;
-    margin: 8vh auto;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid lightgray;
-    box-shadow: 0 0 25px 3px rgba(124, 124, 124, 0.398);
-    padding: 1rem 1.4rem;
-    border-radius: 20px;
-    background-color: #EBE8E3;
+.formContainer {
+  width: 84%;
+  height: auto;
+  margin: 8vh auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgray;
+  box-shadow: 0 0 25px 3px rgba(124, 124, 124, 0.398);
+  padding: 1rem 1.4rem;
+  border-radius: 20px;
+  background-color: #ebe8e3;
 }
-.loginContainer{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.loginContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 /* Form header text */
-.firstHeader{
-    margin-bottom: -13px !important;
-    margin-top: .7rem !important;
+.firstHeader {
+  margin-bottom: -13px !important;
+  margin-top: 0.7rem !important;
 }
-.formHeader{
-    font-size: 1.45rem;
-    color: black;
-    font-weight: bold;
-    margin: .5rem 0 0 .4rem;
+.formHeader {
+  font-size: 1.45rem;
+  color: black;
+  font-weight: bold;
+  margin: 0.5rem 0 0 0.4rem;
 }
 /* Lines - Style */
-.lineHeader, .lineBottom{
-    border-bottom: 1px solid;
-    width: 90%;
-    margin: auto;
-    background-color: var(--dourado);
+.lineHeader,
+.lineBottom {
+  border-bottom: 1px solid;
+  width: 90%;
+  margin: auto;
+  background-color: var(--dourado);
 }
-.lineHeader{
-    margin: 1rem auto;
+.lineHeader {
+  margin: 1rem auto;
 }
-.lineBottom{
-    width: 70%;
-    margin: 0 auto 1rem;
+.lineBottom {
+  width: 70%;
+  margin: 0 auto 1rem;
 }
 /* Inputs */
-.inputFields{
-    display: flex;
-    flex-direction: column;
-    gap: .8rem;
+.inputFields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
-.inputFields > input{
-    border: 1px solid rgba(124, 124, 124, 0.398);
-    border-radius: 25px;
-    height: 1.8rem;
-    text-align: center;
-    width: 90%;
-    margin: auto;
-    font-size: 1.1rem;
+.inputFields > input {
+  border: 1px solid rgba(124, 124, 124, 0.398);
+  border-radius: 16px;
+  height: 40px;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  font-size: 16px;
+  outline: none;
 }
-.confirmation{
-    display: flex;
-    gap: .5rem;
-    width: 80%;
-    margin: .5rem auto .8rem;
+.confirmation {
+  display: flex;
+  gap: 0.5rem;
+  width: 80%;
+  margin: 0.5rem auto 0.8rem;
 }
-.confirmation > p{
-    font-size: .85rem;
+.confirmation > p {
+  font-size: 0.85rem;
 }
 /* Sign in button */
-.signin{
-    width: 13rem !important;
-    height: 3rem !important;
-    background-color: var(--verde);
-    color: var(--dourado2);
-    font-weight: bold;
+.signin {
+  width: 13rem !important;
+  height: 3rem !important;
+  background-color: var(--verde);
+  color: var(--dourado2);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+.signin:hover {
+  background-color: #004138;
 }
 /* Social media login buttons */
-.socialMediaContainer{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: .5rem;
-    margin-bottom: 1rem;
+.socialMediaContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }
-.socialTextContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.socialTextContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.socialMediaButtons{
-    display: flex;
-    gap: 1rem;
+.socialMediaButtons {
+  display: flex;
+  gap: 1rem;
 }
-.google, .facebook{
-    width: 3rem;
-    height: 3rem;
-    border: 1px solid var(--verde);
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    border-radius: 50%;
-    background-color: white;
+.google,
+.facebook {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--verde);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
 }
-.containerBtns > img, .containerBtns > img {
-    width: 1.5rem;
-    height: 1.5rem;
+.containerBtns > img,
+.containerBtns > img {
+  width: 1.5rem;
+  height: 1.5rem;
 }
-.containerBtns{
-    display: flex;
-    gap: 1.3rem;
-    width: auto;
-    margin: auto;
+.containerBtns {
+  display: flex;
+  gap: 1.3rem;
+  width: auto;
+  margin: auto;
 }
-.socialText{
-    align-self: center;
-    color: black;
+.socialText {
+  align-self: center;
+  color: black;
 }
 
-@media only screen and (min-width: 593px){
-    .formContainer{
-        width: 22.25rem;
-    }
+@media only screen and (min-width: 593px) {
+  .formContainer {
+    width: 22.25rem;
+  }
 }
