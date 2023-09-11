@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import AppRouter from "./Routes";
 import "./index.css";
-import { inject } from "@vercel/analytics/*";
+import { inject } from "@vercel/analytics";
 
 inject();
 
